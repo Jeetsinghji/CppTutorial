@@ -64,7 +64,6 @@ namespace nm1
 		push	22					; 00000016H
 		push	11					; 0000000bH
 		call	?fun3@@YAXHH@Z				; fun3
-		add	esp, 8
 		*/
 		fun4(1, 2);
 		/*
@@ -72,12 +71,6 @@ namespace nm1
 		push	1
 		call	?fun4@@YAXHH@Z				; fun4
 		add	esp, 8
-		*/
-		fun5(11, 22);
-		/*
-		push	22					; 00000016H
-		push	11					; 0000000bH
-		call	?fun5@@YGXHH@Z				; fun5
 		*/
 
 		fun6(1, 2);
