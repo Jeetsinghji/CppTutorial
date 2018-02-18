@@ -19,7 +19,6 @@ namespace nm2
 	void main1()
 	{
 		CA obj;
-		//((void(*)())*(long*)*(long*)&obj)();
 		long *vp = (long*)&obj;//reach the vptr
 		long* vt = (long*)*vp;//reach the vtable
 		typedef void(*FPTR)();
@@ -47,6 +46,7 @@ namespace nm2
 		objPtr->fun3();
 		/*
 		mov	ecx, DWORD PTR _objPtr$[ebp]
+		************************************
 		call	?fun3@CA@@QAEXXZ			; CA::fun3
 		*/
 		obj.fun2();
